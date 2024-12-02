@@ -1,0 +1,322 @@
+body {
+  background-color: rgba(10, 7, 7, 0.858);
+}
+
+.mochiy-pop-one-regular {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.side {
+  text-align: center;
+}
+
+.picture {
+  width: 350px;
+  height: auto;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+#theme {
+  color: white;
+  background-image: url("2_The_night_view_from_Mt_Hakodate-1-1MB.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  font-size: 70px;
+  text-align: center;
+  position: relative;
+}
+
+#subTheme {
+  color:white;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+#sub1Theme {
+  color:white;
+  margin-top: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.text1 {
+  color: white;
+  font-size: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#event1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.picture-event {
+  width: 700px;
+  height: auto;
+}
+
+.text-event {
+  color: white;
+  font-size: large;
+}
+
+.text2 {
+  color: white;
+  font-size: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#event2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.picture-event1 {
+  width: 400px;
+  height: auto;
+}
+
+.picture-event2 {
+  width: 400px;
+  height: auto;
+}
+
+.text-event1 {
+  color: white;
+  font-size: large;
+  margin-left: 20px;
+}
+
+#sub2Theme {
+  color:white;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.inline {
+  height: 3px;
+  width: auto;
+}
+
+#sub3Theme {
+  color:white;
+  margin-top: 0;
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.maze {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  position: relative;
+  background-color: white;
+  border: 2px solid blue;
+  border-left: none;
+  border-right:none;
+  overflow: hidden;
+  align-items: flex-end;
+}
+
+.maze .cell:nth-child(-n+9) {
+  align-self: flex-start;
+}
+
+.maze .cell:nth-child(n+10) {
+  align-self: flex-end;
+}
+
+.cell {
+  width: 50px;
+  height: 75px;
+  box-sizing: border-box;
+  margin: 1.5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.wall {
+  color:rgba(159, 200, 233, 0.431);
+  background-color: rgba(10, 130, 229, 0.431);
+  border: 1px solid blue;
+  position: relative;
+  transition: height 2s, transform 2s;
+}
+
+.left-bottom-blank {
+  height: 120px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.bottom-2-blank {
+  margin-bottom: 0px;
+  animation: stretchBottom 1s infinite;
+}
+
+.bottom-4-blank {
+  margin-bottom: 0px;
+  animation: stretchBottom 2s infinite;
+}
+
+.bottom-6-blank {
+  margin-bottom: 0px;
+  animation: stretchBottom 3s infinite;
+}
+
+.bottom-8-blank {
+  margin-bottom: 0px;
+  animation: stretchBottom 2s infinite;
+}
+
+.bottom-3-blank {
+  height: 100px;
+  margin-bottom: 0px;
+}
+
+.bottom-5-blank {
+  height: 140px;
+  margin-bottom: 0px;
+}
+
+.bottom-7-blank {
+  height: 150px;
+  margin-bottom: 0px;
+}
+
+.bottom-9-blank {
+  height: 130px;
+  margin-bottom: 0px;
+}
+
+.left-top-blank {
+  height: 120px;
+  margin-left: 20px;
+  transform-origin: bottom;
+}
+
+.top-11-blank {
+  transform-origin: bottom;
+  animation: stretchTop 1s infinite;
+}
+
+.top-13-blank {
+  transform-origin: bottom;
+  animation: stretchTop 2s infinite;
+}
+
+.top-15-blank {
+  transform-origin: bottom;
+  animation: stretchTop 2s infinite;
+}
+
+.top-17-blank {
+  transform-origin: bottom;
+  animation: stretchTop 3s infinite;
+}
+
+.top-12-blank {
+  height: 150px;
+  margin-top: 0px;
+}
+
+.top-14-blank {
+  height: 140px;
+  margin-top: 0px;
+}
+
+.top-16-blank {
+  height: 100px;
+  margin-top: 0px;
+}
+
+.top-18-blank {
+  height: 150px;
+  margin-top: 0px;
+}
+
+
+@keyframes stretchBottom {
+  0%, 100% {
+    height: 75px;
+    transform: translateY(0);
+  }
+  50% {
+    height: 150px;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stretchTop {
+  0%, 100% {
+    height: 75px;
+    transform: translateY(0);
+  }
+  50% {
+    height: 150px;
+    transform: translateY(0);
+  }
+}
+
+#ngMessage {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+}
+
+#mouseStalker {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(251, 4, 4);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+#maze-container {
+  cursor: none;
+  position: relative;
+}
+
+#okMessage {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: rgb(19, 7, 236);
+  font-weight: 1000;
+}
