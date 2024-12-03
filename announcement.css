@@ -114,6 +114,12 @@ body {
   font-size: 30px;
 }
 
+.annotation {
+  color:white;
+  font-size: small;
+  margin-top: 0;
+}
+
 .inline {
   height: 3px;
   width: auto;
